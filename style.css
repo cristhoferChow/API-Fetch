@@ -1,0 +1,9 @@
+#resultado{
+    padding: 1%;
+    margin-top: 2%;
+    max-width: 15%;
+    background-color: #f1ff9f;
+    border: 1px solid #464545;
+    border-radius: 10px;
+    box-shadow: #464545;
+}
