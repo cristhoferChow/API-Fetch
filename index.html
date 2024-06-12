@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Consumindo API ViaCEP</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Consulta Endereço ViaCEP</h1>
-    
-    <label>Digite seu CEP:</label>
-    <input type="number" id="cep">
-    <button onclick="consultaEnd()">Consultar</button>
+    <div class="container">
+        <h1>Consulta Endereço ViaCEP</h1>
+        
+        <label>Digite seu CEP:</label>
+        <input type="text" id="cep">
+        <button onclick="consultaEnd()">Consultar</button>
 
-    <div id="resultado">
-        <p>Seu resultado aqui: </p>
+        <div id="resultado">
+            <p>Seu resultado aqui: </p>
+        </div>
+
+        <h2>Endereços Salvos</h2>
+        <ul id="enderecos-lista"></ul>
+
+        <h2>Atualizar Endereço</h2>
+        <input type="text" id="update-cep" placeholder="12345-678">
+        <button onclick="atualizarEndereco()">Atualizar</button>
+
+        <h2>Deletar Endereço</h2>
+        <input type="text" id="delete-cep" placeholder="12345-678">
+        <button onclick="deletarEndereco()">Deletar</button>
     </div>
-
 </body>
 </html>
