@@ -82,3 +82,12 @@ function deletarEndereco() {
         alert("Endereço não encontrado para deleção!");
     }
 }
+
+
+/* força o uso de numeros e hífen nos inputs*/
+function validarInput(input) {
+    const v=input.value;
+    input.value=v.replace(/[^0-9-]/g, '');
+
+    
+}
